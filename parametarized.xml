@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ATLMT">
+<parameter name="URL" value="https://beta.atlmoneytransfer.com"/>
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="AtlMobileAppAuto.Registration"/>
+  <class name="AtlMobileAppAuto.Login"/>
+  <class name="AtlMobileAppAuto.ForgetPassword"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
