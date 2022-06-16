@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -12,8 +13,8 @@ import io.appium.java_client.android.AndroidElement;
 
 public class Login extends Config {
 
-    @AfterTest
-    public void loginPage() throws MalformedURLException {
+    @Test(dataProvider = "dataProviderTest")
+    public void loginPage(String uid1, String pwd1) throws MalformedURLException {
         // TODO Auto-generated method stub
 
         AndroidDriver<AndroidElement> driver = capabilities();
@@ -23,9 +24,9 @@ public class Login extends Config {
         //tagname[@attribute='value]
         driver.findElementByXPath("//android.widget.Button[@text='Already Registered? Login']").click();
         WebElement email = driver.findElementByXPath("//android.widget.EditText[@text='Email']");
-        email.sendKeys("s915@gmail.com");
+        email.sendKeys(uid1);
         WebElement password = driver.findElementByXPath("//android.widget.EditText[@text='Password']");
-        password.sendKeys("Aa1234!@#$");
+        password.sendKeys(pwd1);
 
         driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
 
@@ -57,5 +58,50 @@ public class Login extends Config {
         //driver.findElementByAndroidUIAutomator("text(\"Save\")").click();
 
     }
+
+    @DataProvider
+    public Object[][] dataProviderTest() {
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Object[][] data2 = new Object[3][2];
+        //1st set
+        data2[0][0] = "qayy@yopmail.com";
+        data2[0][1] = "Qa123!";
+
+
+
+        //2nd set
+        data2[1][0] = "qazza@yopmail.com";
+        data2[1][1] = "Qa123!";
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        //3rd set
+        data2[2][0]="qatzz@yopmail.com";
+        data2[2][1]="Qa123!";
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+        return data2;
+
+
+    }
+
+
 
 }

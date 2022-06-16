@@ -28,7 +28,7 @@ public class ForgetPassword extends Config {
         //WebElement email =  driver.findElementByXPath("//android.widget.EditText[@text='Email'][3]");
         //email.sendKeys("promitm55@gmail.com");
 
-        driver.findElementByAndroidUIAutomator("text(\"Email\")").sendKeys("agfatsseerr43@gmail.com");
+        driver.findElementByAndroidUIAutomator("text(\"Email\")").sendKeys("qatzz@yopmail.com");
 
         driver.findElementByXPath("//android.widget.Button[@text='Submit']").click();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

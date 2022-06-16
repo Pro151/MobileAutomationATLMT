@@ -99,17 +99,7 @@ public class Reistration2DataProvider extends Config {
         AndroidDriver<AndroidElement> driver = capabilities();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         //XPATH
         //tagname[@attribute='value]
@@ -145,19 +135,38 @@ public class Reistration2DataProvider extends Config {
     public Object[][] dataProvider1() {
 
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
         Object[][] data1 = new Object[3][3];
         //1st set
-        data1[0][0] = "qaa@yopmail.com";
+        data1[0][0] = "qayy@yopmail.com";
         data1[0][1] = "Qa123!";
         data1[0][2] = "Qa123!";
         //2nd set
-        data1[1][0] = "qaee@yopmail.com";
+        data1[1][0] = "qazza@yopmail.com";
         data1[1][1] = "Qa123!";
         data1[1][2] = "Qa123!";
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         //3rd set
-		data1[2][0]="qat@yopmail.com";
+		data1[2][0]="qatzz@yopmail.com";
 		data1[2][1]="Qa123!";
 		data1[2][2]="Qa123!";
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         return data1;
 
@@ -167,18 +176,36 @@ public class Reistration2DataProvider extends Config {
     @DataProvider
     public Object[][] dataProvider2() {
 
-        Object[][] data2 = new Object[3][3];
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Object[][] data2 = new Object[3][2];
         //1st set
-        data2[0][0] = "qaa@yopmail.com";
+        data2[0][0] = "qayy@yopmail.com";
         data2[0][1] = "Qa123!";
 
         //2nd set
-        data2[1][0] = "qaee@yopmail.com";
+        data2[1][0] = "qazza@yopmail.com";
         data2[1][1] = "Qa123!";
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
 
         //3rd set
-		data2[2][0]="qat@yopmail.com";
+		data2[2][0]="qatzz@yopmail.com";
 		data2[2][1]="Qa123!";
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
 
         return data2;
