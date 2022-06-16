@@ -8,8 +8,8 @@
 
   <test thread-count="5" name="Test">
   <classes>
-  <!--<class name="AtlMobileAppAuto.DocUpload"/>-->
-  <class name="AtlMobileAppAuto.Reistration2DataProvider"/>
+
+  <class name="AtlMobileAppAuto.Registration"/>
   <class name="AtlMobileAppAuto.Login"/>
   <class name="AtlMobileAppAuto.ForgetPassword"/>
   </classes>
