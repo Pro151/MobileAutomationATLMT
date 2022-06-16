@@ -32,34 +32,62 @@ public class Reistration2DataProvider extends Config {
         confirm_password.sendKeys(CPwd1);
 
         driver.findElementByXPath("//android.widget.CheckBox[@text='']").click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
 
         //WebElement termsAndConditionsCheckbox = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.id(driver.getAndroidElementId("checkbox_terms_and_conditions"))));
         //termsAndConditionsCheckbox.click();
 
         driver.findElementByXPath("//android.widget.Button[@text='Sign Up']").click();
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
 
         driver.findElementByAndroidUIAutomator("text(\"YES\")").click();
 
         driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"3\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"4\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"5\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"3\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"4\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"5\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+
+
         driver.findElementByAndroidUIAutomator("text(\"Continue\")").click();
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"3\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"4\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"5\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -71,6 +99,18 @@ public class Reistration2DataProvider extends Config {
         AndroidDriver<AndroidElement> driver = capabilities();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         //XPATH
         //tagname[@attribute='value]
         driver.findElementByXPath("//android.widget.Button[@text='Already Registered? Login']").click();
@@ -79,12 +119,22 @@ public class Reistration2DataProvider extends Config {
         WebElement password = driver.findElementByXPath("//android.widget.EditText[@text='Password']");
         password.sendKeys(Pwd2);
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
 
         //driver.findElementByXPath("//android.widget.CheckBox[@text='']").click();
 
         //WebElement termsAndConditionsCheckbox = (new WebDriverWait(driver, 60)).until(ExpectedConditions.presenceOfElementLocated(By.id(driver.getAndroidElementId("checkbox_terms_and_conditions"))));
         //termsAndConditionsCheckbox.click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         driver.findElementByXPath("//android.widget.Button[@text='Login']").click();
 
@@ -95,19 +145,19 @@ public class Reistration2DataProvider extends Config {
     public Object[][] dataProvider1() {
 
 
-        Object[][] data1 = new Object[2][3];
+        Object[][] data1 = new Object[3][3];
         //1st set
-        data1[0][0] = "awgfwadtsseerrr43@gmail.com";
-        data1[0][1] = "Asp123!@#";
-        data1[0][2] = "Asp123!@#";
+        data1[0][0] = "qaa@yopmail.com";
+        data1[0][1] = "Qa123!";
+        data1[0][2] = "Qa123!";
         //2nd set
-        data1[1][0] = "dawagfwsdtuusere53@gmail.com";
-        data1[1][1] = "Asp123!@#";
-        data1[1][2] = "Asp123!@#";
+        data1[1][0] = "qaee@yopmail.com";
+        data1[1][1] = "Qa123!";
+        data1[1][2] = "Qa123!";
         //3rd set
-		/*data1[2][0]="dasp53@gmail.com";
-		data1[2][1]="Asp123!@#";
-		data1[2][2]="Asp123!@#";*/
+		data1[2][0]="qat@yopmail.com";
+		data1[2][1]="Qa123!";
+		data1[2][2]="Qa123!";
 
         return data1;
 
@@ -117,18 +167,18 @@ public class Reistration2DataProvider extends Config {
     @DataProvider
     public Object[][] dataProvider2() {
 
-        Object[][] data2 = new Object[2][2];
+        Object[][] data2 = new Object[3][3];
         //1st set
-        data2[0][0] = "awgfwadtsseerrr43@gmail.com";
-        data2[0][1] = "Asp123!@#";
+        data2[0][0] = "qaa@yopmail.com";
+        data2[0][1] = "Qa123!";
 
         //2nd set
-        data2[1][0] = "dawagfwsdtuusere53@gmail.com";
-        data2[1][1] = "Asp123!@#";
+        data2[1][0] = "qaee@yopmail.com";
+        data2[1][1] = "Qa123!";
 
         //3rd set
-		/*data2[2][0]="dasp53@gmail.com";
-		data2[2][1]="Asp123!@#";*/
+		data2[2][0]="qat@yopmail.com";
+		data2[2][1]="Qa123!";
 
 
         return data2;
