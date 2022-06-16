@@ -33,6 +33,7 @@ public class Listeners implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		//ITestListener.super.onTestSkipped(result);
+		System.out.println("The test case skipped"+"_"+result.getName());
 		
 	}
 
