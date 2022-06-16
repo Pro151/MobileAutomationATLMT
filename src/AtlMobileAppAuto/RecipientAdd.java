@@ -63,39 +63,38 @@ public class RecipientAdd extends Config {
         action.scroll(sC, 2, 10);
         action.perform();
         sC.click();*/
+
+        driver.findElementByXPath("//android.widget.EditText[@text='Search country']").sendKeys("Belgium");
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.EditText[@text='Search country'").sendKeys("Belgium");
+        driver.findElementByXPath("//android.widget.TextView[@text=' Belgium']").click();
+
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Armin");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Lauran");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.TextView[@text='Belgium'").click();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name'").sendKeys("Armin");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name'").sendKeys("Lauran");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        driver.findElementByXPath("//android.widget.EditText[@text='Bank'").sendKeys("IDFT");
-        driver.findElementByXPath("//android.widget.EditText[@text='IBAN'").sendKeys("IV45465465456454456465446");
+        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("IDFT");
+        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539007547034");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElementById("com.atlmt:id/text_input_end_icon").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Family'").click();
+        driver.findElementByXPath("//android.widget.TextView[@text='Family']").click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElementByXPath("//android.widget.Button[@text='Save']").click();
 
     }
 
