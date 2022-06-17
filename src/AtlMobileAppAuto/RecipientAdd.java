@@ -394,7 +394,7 @@ public class RecipientAdd extends Config {
 
         driver.findElementByXPath("//android.widget.TextView[@text=' Benin']").click();
         //Payment channel selection
-        driver.findElementByXPath("//android.widget.TextView[@text='Mobile Wallet']").click();
+        driver.findElementByXPath("//android.widget.TextView[@text='Account Transfer']").click();
 
         driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Kelly");
         driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Jesson");
@@ -413,7 +413,7 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementById("com.atlmt:id/text_input_end_icon").click();
+        driver.findElementByXPath("//android.widget.EditText[@text='Relationship']").click();
         driver.findElementByXPath("//android.widget.TextView[@text='Business']").click();
         try {
             Thread.sleep(1000);
