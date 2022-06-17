@@ -22,11 +22,13 @@ public class Login extends Config {
 
         //XPATH
         //tagname[@attribute='value]
+
         driver.findElementByXPath("//android.widget.Button[@text='Already Registered? Login']").click();
         WebElement email = driver.findElementByXPath("//android.widget.EditText[@text='Email']");
         email.sendKeys(uid1);
         WebElement password = driver.findElementByXPath("//android.widget.EditText[@text='Password']");
         password.sendKeys(pwd1);
+        driver.findElementById("com.atlmt:id/text_input_end_icon").click();
 
         driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
 
@@ -73,7 +75,11 @@ public class Login extends Config {
         data2[0][0] = "qayy@yopmail.com";
         data2[0][1] = "Qa123!";
 
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         //2nd set
         data2[1][0] = "qazza@yopmail.com";
