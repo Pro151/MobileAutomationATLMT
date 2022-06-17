@@ -18,7 +18,7 @@ public class Login extends Config {
         // TODO Auto-generated method stub
 
         AndroidDriver<AndroidElement> driver = capabilities();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 
         //XPATH
         //tagname[@attribute='value]

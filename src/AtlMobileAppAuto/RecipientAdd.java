@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.sql.DriverPropertyInfo;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class RecipientAdd extends Config {
@@ -78,15 +79,15 @@ public class RecipientAdd extends Config {
         }
         driver.findElementByXPath("//android.widget.TextView[@text=' Belgium']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Armin");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Lauran");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Ravi");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Ojha");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("IDFT");
-        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539007547034");
+        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("SBTF");
+        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539017547014");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -188,8 +189,8 @@ public class RecipientAdd extends Config {
             throw new RuntimeException(e);
         }
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Lani");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Novosky");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Vijay");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Dewarakonda");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -202,7 +203,7 @@ public class RecipientAdd extends Config {
             throw new RuntimeException(e);
         }
         driver.findElementByXPath("//android.widget.TextView[@text='Moov Money']").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("85425639");
+        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("85422646");
         /*try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -227,7 +228,7 @@ public class RecipientAdd extends Config {
     }
 
 
-    /*@Test
+    @Test
     public void withPaymentChannelOTCCashPickUp() throws MalformedURLException {
 
         AndroidDriver<AndroidElement> driver = capabilities();
@@ -283,7 +284,7 @@ public class RecipientAdd extends Config {
         TouchActions action = new TouchActions(driver);
         action.scroll(sC, 2, 10);
         action.perform();
-        sC.click();
+        sC.click();*/
         //Country selection
       driver.findElementByXPath("//android.widget.EditText[@text='Search country']").sendKeys("Benin");
 
@@ -296,17 +297,18 @@ public class RecipientAdd extends Config {
 
         driver.findElementByXPath("//android.widget.TextView[@text=' Benin']").click();
         //Payment channel selection
-        driver.findElementByXPath("//android.widget.TextView[@text='Mobile Wallet']").click();
+        driver.findElementByXPath("//android.widget.TextView[@text='OTC Cash Pickup']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Adel");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Lesson");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Alon");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Mussk");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("IDFT");
-        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539007547034");
+        driver.findElementByXPath("//android.widget.EditText[@text='Address Line 1 ']").sendKeys("BL Street");
+        driver.findElementByXPath("//android.widget.EditText[@text='City ']").sendKeys("New York City3");
+        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("96545254");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -322,11 +324,11 @@ public class RecipientAdd extends Config {
         driver.findElementByXPath("//android.widget.Button[@text='Save']").click();
 
     }
-*/
+
 
 
     @Test
-    public void withPaymentChannelAccountTransafer() throws MalformedURLException {
+    public void withPaymentChannelAccountTransafer() throws MalformedURLException, InterruptedException {
 
         AndroidDriver<AndroidElement> driver = capabilities();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -396,8 +398,8 @@ public class RecipientAdd extends Config {
         //Payment channel selection
         driver.findElementByXPath("//android.widget.TextView[@text='Account Transfer']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Kelly");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Jesson");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Georgeo");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Franklin");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -405,9 +407,9 @@ public class RecipientAdd extends Config {
         }
         driver.findElementById("com.atlmt:id/text_input_end_icon").click();
         driver.findElementByXPath("//android.widget.TextView[@text='Bank Of Africa Bénin - BOAB']").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF123");
-        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126321547");
-        driver.findElementByXPath("//android.widget.EditText[@text='RIB Key ']").sendKeys("54");
+        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF445");
+        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126333528");
+        driver.findElementByXPath("//android.widget.EditText[@text='RIB Key ']").sendKeys("55");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -420,7 +422,35 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
+
+        /*WebElement e =  driver.findElementByXPath("//android.widget.Button[@text='Save']");
+        try {
+            TouchActions action = new TouchActions(driver);
+            action.scroll(e, 10, 100);
+            action.perform();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
+
+        //Scroll app page
+        HashMap<String ,Object>scrollObject = new HashMap<>();
+        scrollObject.put("direction","down");
+        scrollObject.put("text","Save");
+
+        driver.executeScript("mobile:scroll", scrollObject);
+
+        //driver.findElementByAccessibilityId("Save").click();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        //scroll down to the element and click
         driver.findElementByXPath("//android.widget.Button[@text='Save']").click();
+
+
 
     }
 

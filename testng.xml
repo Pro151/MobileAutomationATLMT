@@ -12,7 +12,7 @@
 
             <class name="AtlMobileAppAuto.RecipientAdd"/>
             <!--<class name="AtlMobileAppAuto.Registration"/>-->
-            <class name="AtlMobileAppAuto.Login"/>
+            <!--<class name="AtlMobileAppAuto.Login"/>
             <!--<class name="AtlMobileAppAuto.ForgetPassword"/>-->
         </classes>
     </test> <!-- Test -->
