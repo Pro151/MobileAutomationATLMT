@@ -434,19 +434,16 @@ public class RecipientAdd extends Config {
         }*/
 
         //Scroll app page
-        HashMap<String ,Object>scrollObject = new HashMap<>();
+        /*HashMap<String ,Object>scrollObject = new HashMap<>();
         scrollObject.put("direction","down");
         scrollObject.put("text","Save");
 
-        driver.executeScript("mobile:scroll", scrollObject);
+        driver.executeScript("mobile:scroll", scrollObject);*/
 
         //driver.findElementByAccessibilityId("Save").click();
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Save\"));");
         //scroll down to the element and click
         driver.findElementByXPath("//android.widget.Button[@text='Save']").click();
 
