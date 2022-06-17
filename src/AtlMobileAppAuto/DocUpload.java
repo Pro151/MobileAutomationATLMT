@@ -23,11 +23,11 @@ public class DocUpload extends Config {
 			//tagname[@attribute='value]
 			driver.findElementByXPath("//android.widget.Button[@text='Already Registered? Login']").click();
 			WebElement email =  driver.findElementByXPath("//android.widget.EditText[@text='Email']");
-			email.sendKeys("proom93@gmail.com");
+			email.sendKeys("qa222@yopmail.com");
 			WebElement password =  driver.findElementByXPath("//android.widget.EditText[@text='Password']");
-			password.sendKeys("NewUser1234!@");
+			password.sendKeys("Qa123!");
 			
-			driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
+			//driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
 			
 			//driver.findElementByXPath("//android.widget.CheckBox[@text='']").click();
 			

@@ -30,7 +30,7 @@ public class Login extends Config {
         password.sendKeys(pwd1);
         driver.findElementById("com.atlmt:id/text_input_end_icon").click();
 
-        driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
+        //driver.findElementByXPath("//android.widget.ImageButton[@text='']").click();
 
         //driver.findElementByXPath("//android.widget.CheckBox[@text='']").click();
 
@@ -59,6 +59,7 @@ public class Login extends Config {
         //driver.findElementByAndroidUIAutomator("text(\"USA American \")").click();
         //driver.findElementByAndroidUIAutomator("text(\"Save\")").click();
 
+        driver.quit();
     }
 
     @DataProvider
@@ -107,6 +108,8 @@ public class Login extends Config {
 
 
     }
+
+
 
 
 
