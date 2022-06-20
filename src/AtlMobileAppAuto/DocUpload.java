@@ -35,6 +35,19 @@ public class DocUpload extends Config {
 			//termsAndConditionsCheckbox.click();
 			
 			driver.findElementByXPath("//android.widget.Button[@text='Login']").click();
+
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				throw new RuntimeException(e);
+			}
+
+			//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+			driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+			driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+			driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.findElementByAndroidUIAutomator("text(\"UPLOAD\")").click();
 			//Proof Of Identity --> Passport
 			driver.findElementByAndroidUIAutomator("text(\"Proof of Identity\")").click();

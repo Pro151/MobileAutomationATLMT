@@ -398,8 +398,8 @@ public class RecipientAdd extends Config {
         //Payment channel selection
         driver.findElementByXPath("//android.widget.TextView[@text='Account Transfer']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Georgeo");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Franklin");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Grigory");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Blockstain");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -407,8 +407,8 @@ public class RecipientAdd extends Config {
         }
         driver.findElementById("com.atlmt:id/text_input_end_icon").click();
         driver.findElementByXPath("//android.widget.TextView[@text='Bank Of Africa Bénin - BOAB']").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF445");
-        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126333528");
+        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF446");
+        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126222528");
         driver.findElementByXPath("//android.widget.EditText[@text='RIB Key ']").sendKeys("55");
         try {
             Thread.sleep(1000);
