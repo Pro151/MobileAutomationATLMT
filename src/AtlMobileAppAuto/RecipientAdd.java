@@ -1,14 +1,12 @@
 package AtlMobileAppAuto;
 
+import ConfigPages.Config;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.touch.TouchActions;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
-import java.sql.DriverPropertyInfo;
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class RecipientAdd extends Config {

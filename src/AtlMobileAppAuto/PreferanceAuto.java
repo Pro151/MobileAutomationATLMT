@@ -1,4 +1,6 @@
 package AtlMobileAppAuto;
 
-public class PreferanceAuto extends Config{
+import ConfigPages.Config;
+
+public class PreferanceAuto extends Config {
 }

@@ -1,4 +1,6 @@
 package AtlMobileAppAuto;
 
-public class MenuItemAuto extends Config{
+import ConfigPages.Config;
+
+public class MenuItemAuto extends Config {
 }

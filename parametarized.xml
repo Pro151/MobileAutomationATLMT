@@ -4,9 +4,9 @@
 <parameter name="URL" value="https://beta.atlmoneytransfer.com"/>
   <test thread-count="5" name="Test">
   <classes>
-  <class name="AtlMobileAppAuto.Registration"/>
-  <class name="AtlMobileAppAuto.Login"/>
-  <class name="AtlMobileAppAuto.ForgetPassword"/>
+  <class name="LoginRegisterPagesAuto.Registration"/>
+  <class name="LoginRegisterPagesAuto.Login"/>
+  <class name="ForgetPasswordAuto.ForgetPassword"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -6,12 +6,12 @@
     <groups>
     </groups>
     <test started-at="2022-05-05T16:28:27 IST" name="Default test" finished-at="2022-05-05T16:28:46 IST" duration-ms="19158">
-      <class name="AtlMobileAppAuto.ForgetPassword">
+      <class name="ForgetPasswordAuto.ForgetPassword">
         <test-method signature="ForgorPwd()[pri:0, instance:AtlMobileAppAuto.ForgetPassword@22ef9844]" started-at="2022-05-05T16:28:27 IST" name="ForgorPwd" finished-at="2022-05-05T16:28:46 IST" duration-ms="19134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgorPwd -->
-      </class> <!-- AtlMobileAppAuto.ForgetPassword -->
+      </class> <!-- ForgetPasswordAuto.ForgetPasswordAuto -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

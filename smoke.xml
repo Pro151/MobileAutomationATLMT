@@ -8,9 +8,9 @@
 	</run>
 	</groups>
   <classes>
-  <class name="AtlMobileAppAuto.Registration"/>
-  <class name="AtlMobileAppAuto.Login"/>
-  <class name="AtlMobileAppAuto.ForgetPassword"/>
+  <class name="LoginRegisterPagesAuto.Registration"/>
+  <class name="LoginRegisterPagesAuto.Login"/>
+  <class name="ForgetPasswordAuto.ForgetPassword"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

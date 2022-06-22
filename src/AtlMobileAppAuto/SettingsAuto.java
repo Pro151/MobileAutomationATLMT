@@ -1,4 +1,6 @@
 package AtlMobileAppAuto;
 
-public class SettingsAuto extends Config{
+import ConfigPages.Config;
+
+public class SettingsAuto extends Config {
 }

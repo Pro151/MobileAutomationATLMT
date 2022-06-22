@@ -3,7 +3,7 @@
 <suite name="ATLMT">
 
     <listeners>
-        <listener class-name="AtlMobileAppAuto.Listeners"/>
+        <listener class-name="AutoListeners.Listeners"/>
     </listeners>
 
     <test thread-count="5" name="Test">
@@ -11,9 +11,9 @@
 
 
             <class name="AtlMobileAppAuto.RecipientAdd"/>
-            <!--<class name="AtlMobileAppAuto.Registration"/>-->
-            <!--<class name="AtlMobileAppAuto.Login"/>
-            <!--<class name="AtlMobileAppAuto.ForgetPassword"/>-->
+            <!--<class name="LoginRegisterPagesAuto.Registration"/>-->
+            <!--<class name="LoginRegisterPagesAuto.Login"/>
+            <!--<class name="ForgetPasswordAuto.ForgetPasswordAuto"/>-->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

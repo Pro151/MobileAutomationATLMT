@@ -2,20 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ATLMT]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="AtlMobileAppAuto.Listeners"/>
+    <listener class-name="AutoListeners.Listeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="AtlMobileAppAuto.Reistration2DataProvider">
+      <class name="LoginRegisterPagesAuto.Reistration2DataProvider">
         <methods>
           <include name="loginPage2" invocation-numbers="0"/>
         </methods>
-      </class> <!-- AtlMobileAppAuto.Reistration2DataProvider -->
-      <class name="AtlMobileAppAuto.ForgetPassword">
+      </class> <!-- LoginRegisterPagesAuto.Reistration2DataProvider -->
+      <class name="ForgetPasswordAuto.ForgetPassword">
         <methods>
           <include name="ForgorPwd"/>
         </methods>
-      </class> <!-- AtlMobileAppAuto.ForgetPassword -->
+      </class> <!-- ForgetPasswordAuto.ForgetPasswordAuto -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [ATLMT] -->
