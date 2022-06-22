@@ -34,10 +34,10 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
 
 
         try {
@@ -77,15 +77,15 @@ public class RecipientAdd extends Config {
         }
         driver.findElementByXPath("//android.widget.TextView[@text=' Belgium']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Ravi");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Ojha");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Ravindra");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Jadeja");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("SBTF");
-        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539017547014");
+        driver.findElementByXPath("//android.widget.EditText[@text='Bank ']").sendKeys("SBTD");
+        driver.findElementByXPath("//android.widget.EditText[@text='IBAN ']").sendKeys("BE68539007547014");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -125,10 +125,10 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
 
 
         try {
@@ -187,8 +187,8 @@ public class RecipientAdd extends Config {
             throw new RuntimeException(e);
         }
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Vijay");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Dewarakonda");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("VijayA");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Ali");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -201,7 +201,7 @@ public class RecipientAdd extends Config {
             throw new RuntimeException(e);
         }
         driver.findElementByXPath("//android.widget.TextView[@text='Moov Money']").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("85422646");
+        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("85422642");
         /*try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -247,10 +247,10 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
 
 
         try {
@@ -297,16 +297,16 @@ public class RecipientAdd extends Config {
         //Payment channel selection
         driver.findElementByXPath("//android.widget.TextView[@text='OTC Cash Pickup']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Alon");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Mussk");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Elon");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Muskat");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByXPath("//android.widget.EditText[@text='Address Line 1 ']").sendKeys("BL Street");
-        driver.findElementByXPath("//android.widget.EditText[@text='City ']").sendKeys("New York City3");
-        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("96545254");
+        driver.findElementByXPath("//android.widget.EditText[@text='Address Line 1 ']").sendKeys("BL Street 1");
+        driver.findElementByXPath("//android.widget.EditText[@text='City ']").sendKeys("New York City4");
+        driver.findElementByXPath("//android.widget.EditText[@text='Mobile Number ']").sendKeys("96545234");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -346,10 +346,10 @@ public class RecipientAdd extends Config {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
-        driver.findElementByAndroidUIAutomator("text(\"1\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
+        driver.findElementByAndroidUIAutomator("text(\"2\")").click();
 
 
         try {
@@ -396,8 +396,8 @@ public class RecipientAdd extends Config {
         //Payment channel selection
         driver.findElementByXPath("//android.widget.TextView[@text='Account Transfer']").click();
 
-        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Grigory");
-        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("Blockstain");
+        driver.findElementByXPath("//android.widget.EditText[@text='First Name']").sendKeys("Gary");
+        driver.findElementByXPath("//android.widget.EditText[@text='Last Name']").sendKeys("stain");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -405,9 +405,9 @@ public class RecipientAdd extends Config {
         }
         driver.findElementById("com.atlmt:id/text_input_end_icon").click();
         driver.findElementByXPath("//android.widget.TextView[@text='Bank Of Africa Bénin - BOAB']").click();
-        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF446");
-        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126222528");
-        driver.findElementByXPath("//android.widget.EditText[@text='RIB Key ']").sendKeys("55");
+        driver.findElementByXPath("//android.widget.EditText[@text='Branch Code ']").sendKeys("DF434");
+        driver.findElementByXPath("//android.widget.EditText[@text='Account Number ']").sendKeys("452126292528");
+        driver.findElementByXPath("//android.widget.EditText[@text='RIB Key ']").sendKeys("22");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

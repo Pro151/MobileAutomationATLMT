@@ -11,9 +11,9 @@
 
 
             <class name="AtlMobileAppAuto.RecipientAdd"/>
-            <!--<class name="LoginRegisterPagesAuto.Registration"/>-->
-            <!--<class name="LoginRegisterPagesAuto.Login"/>
-            <!--<class name="ForgetPasswordAuto.ForgetPasswordAuto"/>-->
+            <class name="LoginRegisterPagesAuto.Registration"/>-->
+            <class name="LoginRegisterPagesAuto.Login"/>
+            <class name="ForgetPasswordAuto.ForgetPassword"/>-->
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
